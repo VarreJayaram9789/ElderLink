@@ -4,16 +4,24 @@ import {
   Route,
 } from "react-router-dom";
 
-import Login from "./pages/login/Login";
+
 import Home from "./pages/home/home";
 import Profile from "./pages/profile/Profile";
+import RegistrationPage from "./pages/register/Register";
+import LoginPage from "./pages/login/Login";
+const mongoose=require("mongoose");
+
+
+
+
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/">
-          <Route path="login" element={<Login />} />
+          <Route path="register" element={<RegistrationPage />} />
+          <Route path="login" element={<LoginPage />} />
             <Route index element={<Home />} />
             <Route path="profile">
               <Route path=":userId" element={<Profile />} />

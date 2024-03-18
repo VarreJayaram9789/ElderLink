@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="navbarContainer">
         <div className="navbarLeft">
             <Link to="/" style={{textDecoration: "none"}}>
-            <span className='logo' >CareTakers</span>
+            <span className='logo' >ElderLink</span>
             </Link>
            
         </div>
